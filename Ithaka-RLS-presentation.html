@@ -184,7 +184,7 @@ slide:not(.current) .plotly.html-widget{
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Themes</h2></hgroup><article  id="themes">
 
-<aside class='note'><section><p>The report summarizes the following themes and then presents recommendations and conclusions: - Data Acquisition and Preprocessing; - Ethics of Data Handling; - Data Analysis and Programming Languages; - Compute Infrastructure; - Data/Code/Research Sharing; - Teaching and Learning; and - Advancing the Discipline.</p>
+<aside class='note'><section><p>The following section summarizes the various themes we found, and then presents recommendations and conclusions.</p>
 
 <p>Going forward I will refer to Big Data and Data Science Researchers simply as &ldquo;researchers&rdquo; or &ldquo;participants.&rdquo;</p></section></aside>
 
@@ -217,7 +217,7 @@ slide:not(.current) .plotly.html-widget{
 </center></div></div>
 
 <aside class='note'><section><ul>
-<li>Researchers obtained data from various sources, most often from third parties such as companies and government organizations. Sensor data was another popular form of data acquisition: examples are soil moisture sensors or hospital bedside monitors.</li>
+<li>Researchers obtained data from various sources, most often from third parties such as companies and government organizations. Sensor data was another popular form of data acquisition. Examples of sensor data are soil moisture sensors or hospital bedside monitors.</li>
 <li>The challenges associated with this theme are less about acquiring the data itself, and more about verifying quality. A considerable amount of time is spent verifying the data, attempting to discover errors, cleaning up data, and understanding the dataset as best as they can.</li>
 <li>For many machine learning techniques, the data must have labels or classifications so that it can be used to train the model. An example of machine learning is image recognition, like when computers can tell the difference between images of cats and dogs. The process starts by having a human manually label images of cats and images of dogs. Creating those labels can be time-consuming and costly.</li>
 <li>For medical researchers especially, a considerable amount of time is spent de-identifying the data.</li>
@@ -287,9 +287,15 @@ slide:not(.current) .plotly.html-widget{
 
 <aside class='note'><section><p>When asked about short-term storage for their data, the participants described a variety of locations, including Dropbox, Google Drive, Amazon Web Services, local database servers, customized servers, and leased storage through the locally-operated systems (for non-sensitive and sensitive data). The consensus was that there does not exist a reliable solution for storing and maintaining Big Data at UVA.</p>
 
-<p>Of those interviewed, over half were using the university’s high-performance computing system or secure compute system; whereas a third were using commercial systems (like Amazon Web Services or Google Cloud).</p>
+<p>Over half of particpants were using the university’s high-performance computing system or secure compute system; whereas a third were using commercial systems (like Amazon Web Services).</p>
 
-<p>The challenges that the participants described included: - The cost of storage (either cloud or the university’s systems) is too high, like thousands of dollars a month high, or cannot be sustained for multiple years. - It can take days, weeks, or even a month to transfer data from storage to the compute platform. - Another concern was about the time it takes to process the data. Although the participants have access to high-performance computing systems, there were concerns that the algorithms still may take days to run, or the jobs would have to sit in a queue waiting for the appropriate resources. - Finally there is concern that systems provided by the university tend to go away when funding runs out or advocates for the system leave the university.</p></section></aside>
+<p>The challenges that the participants described included:</p>
+
+<ul>
+<li>The cost of storage is extremely expensive, like thousands of dollars a month high, and cannot be sustained for multiple years.</li>
+<li>It can take days, weeks, or even a month to transfer data from storage to the compute platform.</li>
+<li>Another concern was about the time it takes to process the data. Although the participants have access to high-performance computing systems, there were concerns that the algorithms still may take days to run, or the jobs would have to sit in a queue waiting for the appropriate resources.</li>
+</ul></section></aside>
 
 </article></slide><slide class=""><hgroup><h2>Sharing</h2></hgroup><article  id="sharing">
 
@@ -300,12 +306,9 @@ slide:not(.current) .plotly.html-widget{
 
 <ul>
 <li>Sharing Data, Code, and More</li>
-<li>Community for Data Sharing</li>
-<li>Incentives for Data Sharing</li>
-<li>Challenges for Data Sharing</li>
+<li>Incentives and Challenges for Data Sharing</li>
 <li>Collaboration and Community</li>
-<li>Strategies for and Challenges to Collaboration and Community</li>
-<li>Strategies for and Challenges to Disseminating Research</li>
+<li>Disseminating Research</li>
 </ul></li>
 </ul></div>
 
@@ -399,7 +402,7 @@ slide:not(.current) .plotly.html-widget{
 
 <aside class='note'><section><ul>
 <li>These researchers had varied paths to big data, not all were formally trained in computer or data science.</li>
-<li>When trainees have questions, participants lean heavily on YouTube, Kaggle, GitHub, Coursera, and DataCamp for informal, directed training.</li>
+<li>When trainees have questions, participants lean heavily on sites like YouTube, Kaggle, GitHub, Coursera, and DataCamp for informal, directed training.</li>
 <li>Challenges with teaching included getting students to understand that a very large piece of data science is simply getting data into a format that is ready for analysis. Students can be overly eager to get to the analysis without taking time to properly clean and completely understand the data in front of them.</li>
 <li>A perceived challenge was the lack of computing infrastructure for instructional use, but Research Computing does offer services in this area, so this might be a point for outreach.</li>
 <li>As for so many of us, information overload was a concern for big data researchers. They don’t have time to learn everything. There was also a concern about churn in technology. It can be tough to invest time and effort into learning a new tool, only to see technological changes advancing faster than their learning. A respondent who was comfortable with using Stata shared this brief anecdote: &ldquo;And it’s funny, I spent some time last summer learning R, and now the folks I’m working with out of Stats or elsewhere are saying, &lsquo;We don’t use R anymore. We do all this in Python.&rsquo; And I’m like, &lsquo;Oh, come on. For the love of …&rsquo;&rdquo; Additionally, even senior data scientists had similar reservations about cutting edge tools.</li>

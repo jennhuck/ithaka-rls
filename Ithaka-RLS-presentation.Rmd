@@ -107,14 +107,7 @@ NOTES FROM MANDY'S SEDLS TALK:
 
 :::{.notes}
 
-The report summarizes the following themes and then presents recommendations and conclusions:
-- Data Acquisition and Preprocessing;
-- Ethics of Data Handling;
-- Data Analysis and Programming Languages;
-- Compute Infrastructure;
-- Data/Code/Research Sharing;
-- Teaching and Learning; and
-- Advancing the Discipline.
+The following section summarizes the various themes we found, and then presents recommendations and conclusions.
 
 Going forward I will refer to Big Data and Data Science Researchers simply as "researchers" or "participants."
 
@@ -150,7 +143,7 @@ Going forward I will refer to Big Data and Data Science Researchers simply as "r
   
 :::{.notes}
 
-- Researchers obtained data from various sources, most often from third parties such as companies and government organizations.  Sensor data was another popular form of data acquisition: examples are soil moisture sensors or hospital bedside monitors.
+- Researchers obtained data from various sources, most often from third parties such as companies and government organizations.  Sensor data was another popular form of data acquisition. Examples of sensor data are soil moisture sensors or hospital bedside monitors.
 - The challenges associated with this theme are less about acquiring the data itself, and more about verifying quality. A considerable amount of time is spent
 verifying the data, attempting to discover errors, cleaning up data, and understanding the dataset as best as they can.
 - For many machine learning techniques, the data must have labels or classifications so that it can be used to train the model.  An example of machine learning is image recognition, like when computers can tell the difference between images of cats and dogs.  The process starts by having a human manually label images of cats and images of dogs.  Creating those labels can be time-consuming and costly. 
@@ -226,13 +219,13 @@ verifying the data, attempting to discover errors, cleaning up data, and underst
 :::{.notes}
 When asked about short-term storage for their data, the participants described a variety of locations, including Dropbox, Google Drive, Amazon Web Services, local database servers, customized servers, and leased storage through the locally-operated systems (for non-sensitive and sensitive data). The consensus was that there does not exist a reliable solution for storing and maintaining Big Data at UVA. 
 
-Of those interviewed, over half were using the university’s high-performance computing system or secure compute system; whereas a third were using commercial systems (like Amazon Web Services or Google Cloud).
+Over half of particpants were using the university’s high-performance computing system or secure compute system; whereas a third were using commercial systems (like Amazon Web Services).
 
 The challenges that the participants described included:
-- The cost of storage (either cloud or the university’s systems) is too high, like thousands of dollars a month high, or cannot be sustained for multiple years.
+
+- The cost of storage is extremely expensive, like thousands of dollars a month high, and cannot be sustained for multiple years.
 - It can take days, weeks, or even a month to transfer data from storage to the compute platform.
 - Another concern was about the time it takes to process the data. Although the participants have access to high-performance computing systems, there were concerns that the algorithms still may take days to run, or the jobs would have to sit in a queue waiting for the appropriate resources.
-- Finally there is concern that systems provided by the university tend to go away when funding runs out or advocates for the system leave the university.
 
 :::  
 
@@ -244,12 +237,9 @@ The challenges that the participants described included:
 
 - Sharing
   - Sharing Data, Code, and More
-  - Community for Data Sharing
-  - Incentives for Data Sharing
-  - Challenges for Data Sharing
+  - Incentives and Challenges for Data Sharing
   - Collaboration and Community
-  - Strategies for and Challenges to Collaboration and Community
-  - Strategies for and Challenges to Disseminating Research
+  - Disseminating Research
   
 :::
 
@@ -332,7 +322,7 @@ The challenges that the participants described included:
 
 :::{.notes}
 - These researchers had varied paths to big data, not all were formally trained in computer or data science.
-- When trainees have questions, participants lean heavily on YouTube, Kaggle, GitHub, Coursera, and DataCamp for informal, directed training.
+- When trainees have questions, participants lean heavily on sites like YouTube, Kaggle, GitHub, Coursera, and DataCamp for informal, directed training.
 - Challenges with teaching included getting students to understand that a very large piece of data science is simply getting data into a format that is ready for analysis.  Students can be overly eager to get to the analysis without taking time to properly clean and completely understand the data in front of them. 
 - A perceived challenge was the lack of computing infrastructure for instructional use, but Research Computing does offer services in this area, so this might be a point for outreach. 
 - As for so many of us, information overload was a concern for big data researchers. They don't have time to learn everything. There was also a concern about churn in technology. It can be tough to invest time and effort into learning a new tool, only to see technological changes advancing faster than their learning. A respondent who was comfortable with using Stata shared this brief anecdote: “And it's funny, I spent some time last summer learning R, and now the folks I'm working with out of Stats or elsewhere are saying, ‘We don't use R anymore. We do all this in Python.’ And I'm like, ‘Oh, come on. For the love of …’”  Additionally, even senior data scientists had similar reservations about cutting edge tools. 
