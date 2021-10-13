@@ -1,0 +1,440 @@
+---
+title: "Assessing the Research Practices of Big Data and Data Science Researchers at the University of Virginia: An Ithaka S+R Local Report"
+author: "Jennifer Huck"
+date: "October 13, 2021"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<style>
+  .note {
+    font-size: 60%;
+  }
+  .references {
+    font-size: 70%;
+  }
+</style>
+
+## Background
+
+:::: {style="display: flex;"}
+
+::: {}
+
+- Investigation of research practices of Big Data and Data Science Researchers at the University of Virginia
+- The research team: UVA Library (Jenn Huck) and Research Computing (Jackie Huband)
+- Coordinated by Ithaka S+R
+  - Ithaka S+R: set the agenda, created the interview guide, provided training
+  - Ithaka S+R recruits teams from across the country
+
+:::
+
+::: {}
+
+![](images/ithaka-logo.png "Ithaka S+R Logo"){width="300px"}
+<center>
+
+<font size="1"> Image Credit: Ithaka S+R</font>
+
+</center>
+
+:::
+
+::::
+
+:::{.notes}
+
+- The study was conducted by a team of staff from UVA Library and UVA Research Computing (RC). The School of Data Science contributed to the project fees and had intended to participate, but no staff were able to commit time to the project.
+- If you aren't familiar, Research Computing is a separate team outside of the library that administers advanced research computing platforms, such as the high-performance computing system. They have a service orientation similar to the library. We in Research Data Services partner with Research Computing to jointly provide data science and computing workshop training.
+- Ithaka S+R is a not-for-profit research organization that oversaw this study.  Ithaka S+R set the overall research agenda, created the semi-structured interview guide, and provided training for local researchers.
+- Ithaka S+R also recruited teams from across the country to run the same project. There were 20 other local institutions.
+- We had the only team comprised of staff outside of the Library.  It was a huge benefit to conduct our local project with colleagues outside of the Library, because our team then had a broader perspective of services and infrastructure right from the start.
+
+:::
+
+## The Goals of the Study and the Participants
+
+:::: {style="display: flex;"}
+
+::: {}
+
+- Primary goal: to understand the resources and services that researchers who use Big Data and Data Science practices need to be successful 
+- 11 participants at different levels of research from a variety of schools
+- What is "Big Data" anyway?
+
+:::
+
+::: {}
+
+![](images/noun_Researcher_4135783.png "Researcher"){width="300px"}
+<center>
+
+<font size="1"> Image Credit: Researcher by Amethyst Studio from the Noun Project</font>
+
+</center>
+
+:::
+
+::::
+
+:::{.notes}
+- The goal of Ithaka S+R was to understand the resources and services that researchers who use Big Data and Data Science practices need to be successful in their work. This report is an investigation of those researchers at the University of Virginia (UVA). 
+- For the UVA study, the research team interviewed 11 participants.  The participants included five full professors, three associate professors, one assistant professor, and two research scientists. 
+- The schools that were represented were Engineering, Arts & Sciences, Data Science, Medicine, Commerce and Architecture. Our attempt was to interview a broad mix of researchers in different careers and disciplines.
+- What is "Big Data" anyway?  We had a very expansive definition of "big data."  To be included in our study, participants needed to do research that meant that they could not be performed solely on a regular laptop or desktop.  This most often meant that they had a lot of data that took up a lot of storage and requires advanced computing systems, such as Research Computing's high performance computing environments. 
+ 
+
+
+NOTES FROM MANDY'S SEDLS TALK:
+- VOLUME, VELOCITY, and VARIETY. WHAT IS BIG DATA? HOW DID WE SELECT? If it doesn't fit on your laptop...
+- OFTEN requires high powered computing environment (HPC).
+- DATA can be cheap (Twitter, sensor data), or very expensive to collect (brain scans).
+- COST of hardware and network infrastructure to store and transfer large datasets. Cloud storage not sustainable because it's extraordinarily expensive. 
+- USABILITY and ACCESSIBILITY of HPC systems for on-demand data analysis, and teaching/learning activities.
+- Library provide institution-wide data licensing? 
+- Foster networking opportunities, like Scientific Computing Day? Have more of these kinds of events. 
+- Realistic, possible paths: Data Access: fund and manage campus-wide data access and licensing (APIs, proprietary datasets) to alleviate cost burden and promote access to data
+- Building Research Community.
+- Learning/Training Support. 
+- Advocacy to IT/HPC. 
+
+:::
+
+# Themes
+
+:::{.notes}
+
+The report summarizes the following themes and then presents recommendations and conclusions:
+- Data Acquisition and Preprocessing;
+- Ethics of Data Handling;
+- Data Analysis and Programming Languages;
+- Compute Infrastructure;
+- Data/Code/Research Sharing;
+- Teaching and Learning; and
+- Advancing the Discipline.
+
+Going forward I will refer to Big Data and Data Science Researchers simply as "researchers" or "participants."
+
+:::
+
+## Data Acquisition 
+
+:::: {style="display: flex;"}
+
+::: {}
+
+- Data Acquisition
+  - Quality, Verification, and Pre-Processing
+  - Challenges of Data Acquisition
+    - Funding proprietary data purchases
+    - Receiving data in inconsistent formats
+    - Transfer speeds 
+  
+:::
+
+::: {}
+
+![](images/noun_Outliers_1503810.png "Outlier"){width="400px"}
+<center>
+
+<font size="1"> Image Credit: Outliers by sachin modgekar from the Noun Project</font>
+
+</center>
+
+:::
+
+::::
+  
+:::{.notes}
+
+- Researchers obtained data from various sources, most often from third parties such as companies and government organizations.  Sensor data was another popular form of data acquisition: examples are soil moisture sensors or hospital bedside monitors.
+- The challenges associated with this theme are less about acquiring the data itself, and more about verifying quality. A considerable amount of time is spent
+verifying the data, attempting to discover errors, cleaning up data, and understanding the dataset as best as they can.
+- For many machine learning techniques, the data must have labels or classifications so that it can be used to train the model.  An example of machine learning is image recognition, like when computers can tell the difference between images of cats and dogs.  The process starts by having a human manually label images of cats and images of dogs.  Creating those labels can be time-consuming and costly. 
+- For medical researchers especially, a considerable amount of time is spent de-identifying the data. 
+- Further challenges are:
+  - Funding proprietary data purchases.  It can be very expensive to license proprietary data from for-profit companies.
+  - Receiving data in inconsistent formats.  Data cleaning is time consuming. 
+  - Downloading large datasets in a reasonable amount of time. Transfer speeds can be a problem. 
+
+:::
+
+## Ethics of Data Handling
+
+:::: {style="display: flex;"}
+
+::: {}
+
+- Ethics of Data Handling
+  - Biggest concern: advancement of machine learning algorithms could reveal more about individuals than was intended
+  
+:::
+
+::: {}
+
+![](images/noun_ethics_2451084.png "Ethics"){width="400px"}
+<center>
+
+<font size="1"> Image Credit: ethics by monkik from the Noun Project</font>
+
+</center>
+
+:::
+
+::::
+
+
+:::{.notes}
+- About half of participants had serious concerns about the ethics of data handling.  The biggest concern was that the advancement of machine learning algorithms could reveal more about individuals than was intended. While the researchers are definitely sensitive to privacy needs, they are also trying to balance subject protection and scientific innovation.  One participant said, "We don't want to make it absolutely impossible for anybody to do anything. Otherwise, why are we collecting all this valuable data?"
+- Another concern was related to confidence in results.  On participant who studies urban flood events in real time said, “How should you report [your result]? What if you're not very confident in it? What if you know a street is going to flood but you're not very confident? Should you still report it? Those types of issues will start coming [up].”
+- Other ethical questions raised by participants listed were: 
+  - "Can findings that are intended to help society be used for bad, instead of good?" The respondent working on policy-oriented topics, such as immigration and refugee camps, said that any research published on those topics can, quote, “be used in a way that would be counter to what I think would be normatively good policy.”
+  - And finally "Can machine learning algorithms have biases that promote gender or race inequality?"
+:::
+
+
+## Storage and Compute Infrastructure
+
+:::: {style="display: flex;"}
+
+::: {}
+
+- Data Storage: 
+  - Local or cloud; no reliable, affordable solution
+- Transfer speeds can be a challenge
+- Processing time a challenge
+  
+:::
+
+::: {}
+
+![](images/noun_Machine Learning_3294468.png "Machine Learning"){width="400px"}
+<center>
+
+<font size="1"> Image Credit: Machine Learning by Atif Arshad from the Noun Project</font>
+
+</center>
+
+:::
+
+
+::::
+
+:::{.notes}
+When asked about short-term storage for their data, the participants described a variety of locations, including Dropbox, Google Drive, Amazon Web Services, local database servers, customized servers, and leased storage through the locally-operated systems (for non-sensitive and sensitive data). The consensus was that there does not exist a reliable solution for storing and maintaining Big Data at UVA. 
+
+Of those interviewed, over half were using the university’s high-performance computing system or secure compute system; whereas a third were using commercial systems (like Amazon Web Services or Google Cloud).
+
+The challenges that the participants described included:
+- The cost of storage (either cloud or the university’s systems) is too high, like thousands of dollars a month high, or cannot be sustained for multiple years.
+- It can take days, weeks, or even a month to transfer data from storage to the compute platform.
+- Another concern was about the time it takes to process the data. Although the participants have access to high-performance computing systems, there were concerns that the algorithms still may take days to run, or the jobs would have to sit in a queue waiting for the appropriate resources.
+- Finally there is concern that systems provided by the university tend to go away when funding runs out or advocates for the system leave the university.
+
+:::  
+
+## Sharing
+
+:::: {style="display: flex;"}
+
+::: {}
+
+- Sharing
+  - Sharing Data, Code, and More
+  - Community for Data Sharing
+  - Incentives for Data Sharing
+  - Challenges for Data Sharing
+  - Collaboration and Community
+  - Strategies for and Challenges to Collaboration and Community
+  - Strategies for and Challenges to Disseminating Research
+  
+:::
+
+::: {}
+
+![](images/noun_Sharing_4309035.png "Sharing"){width="300px"}
+<center>
+
+<font size="1"> Image Credit: Sharing by havid ika from the Noun Project</font>
+
+</center>
+
+:::
+
+::::
+  
+:::{.notes}
+- Regarding sharing:
+  - Many respondents cannot share data for various reasons (usually because the data are sensitive or proprietary), but they often share code. Here are a couple examples:
+  - A medical respondent pointed out that they cannot share sensitive PHI data, so instead they share analytics and software distributions to their collaborators. These are collaborators working on essentially identical projects at different research sites. The idea is to produce a secure virtual environment: labs will not have to send their data anywhere, the other labs do not consume UVA computing or storage resources, and the greatest benefit is that everyone’s analysis is done identically to the others. Other labs can also submit code or packages to reflect what they want to see in the final analysis. The idea is to design the shared analytical environment to be compatible with any research lab.
+  - One engineering respondent is working to create a website where the public can submit images. The website would deliver results using the engineer’s computer vision methods -- the idea being that the website processes the public’s images with the research team’s models with a very low barrier to entry for the public.
+  
+- Community for Data Sharing: 
+  - Many respondents mentioned disciplinary norms when discussing data sharing. Not all respondents felt that their disciplines really embraced data sharing. Even then, there’s a growing awareness about open data. Other respondents pointed to disciplinary norms that fully encourage open data sharing.
+
+- Incentives for Data Sharing:
+  - To learn about incentives for data sharing, the interviewers asked the question: “Are there any incentives that exist either at UVA or within your field for sharing your data and code with others?” Only the respondents from the School of Data Science could affirm that, yes, they were direct incentives at their school to share research outputs. Most others pointed to indirect incentives, like knowing that open access articles often have a higher citation count. 
+  
+- Challenges to Sharing Data:
+  - Data Sharing is Prohibited. One obvious challenge to sharing is that not all data are allowed to be shared. This is especially true for proprietary and sensitive data.
+  - Size of Data Makes Sharing a Challenge. One researcher was ready to share results data, and to put it in LibraData. The original dataset was around 10 terabytes, while the results dataset was in the multi-gigabytes range. There were no files larger than 5 gigabytes (the limit to what LibraData can accept), but there were a lot of files, and the import process took a while; it was not a seamless process for the researcher.  This is honestly a success story as so many big data researchers simply will not be able to share their data because it is too large for any repository. 
+  - Recreating the compute environment. Setting up a computing environment can be complicated, and it would be a lot to ask a peer reviewer to do that kind of work. Having reviewers recreate the computing environment successfully is a non-trivial challenge.
+  - Tension between Sharing and Competitive Advantage. This is especially true when their is a strong financial incentive not keep data private.  This may arise when research is funded by private companies, or with any research that UVA might patent or license as intellectual property. 
+  
+- Collaboration and Community
+  - Collaboration was a big theme that came up a lot.  Researchers have collaborators at UVA, both other faculty and students, and collaborators outside of UVA. 
+  - There is enthusiasm from more interdisciplinary "cross-pollination."  These researchers are using cutting edge methods, and they may have more in common with researchers using similar methods in different disciplines than with researchers in their own departments.  
+
+- Strategies for and Challenges to Collaboration and Community
+  - Respondents described various strategies for creating and maintaining successful collaborations. Some strategies include:   
+    - Documentation, specifying requirements, code, data, and metadata.
+    - Cloud services, so that all collaborators have access.
+    - Version control.
+    - Common IRB when working with researchers at different institutions.
+    - Using UVA HPC, especially when working with researchers who do not have access to such infrastructure at their home institution. 
+
+- Strategies for and Challenges to Disseminating Research - this is an area where big data and data science researchers sound a lot like every other researcher at UVA.  
+  - Respondents mentioned using traditional academic platforms and public platforms to disseminated their research. All respondents said that they disseminate their research in some sort of academic platform. This typically means publishing in peer-reviewed journals and presenting at conferences.  Some are focusing more squarely on data science journals and conferences *within* their disciplines. 
+  - Some respondents advertise their work on Twitter, or partner with UVA Today to highlight their work. The overall feeling was that researchers felt like they "should" be doing more work in that area. 
+:::
+  
+## Teaching and Learning
+
+:::: {style="display: flex;"}
+
+::: {}
+
+- Teaching and Learning 
+  - Big Data Training
+  - Future Trends
+  - Advising and Training
+  - Challenges with Advising and Training
+  - Staying Abreast of New Developments
+  - Challenges with Staying Abreast of New Developments
+  
+:::
+
+::: {}
+
+![](images/noun_teaching_3924625.png "Teaching and Learning"){width="400px"}
+<center>
+
+<font size="1"> Image Credit: teaching by Tippawan Sookruay from the Noun Project</font>
+
+</center>
+
+:::
+
+::::
+
+:::{.notes}
+- These researchers had varied paths to big data, not all were formally trained in computer or data science.
+- When trainees have questions, participants lean heavily on YouTube, Kaggle, GitHub, Coursera, and DataCamp for informal, directed training.
+- Challenges with teaching included getting students to understand that a very large piece of data science is simply getting data into a format that is ready for analysis.  Students can be overly eager to get to the analysis without taking time to properly clean and completely understand the data in front of them. 
+- A perceived challenge was the lack of computing infrastructure for instructional use, but Research Computing does offer services in this area, so this might be a point for outreach. 
+- As for so many of us, information overload was a concern for big data researchers. They don't have time to learn everything. There was also a concern about churn in technology. It can be tough to invest time and effort into learning a new tool, only to see technological changes advancing faster than their learning. A respondent who was comfortable with using Stata shared this brief anecdote: “And it's funny, I spent some time last summer learning R, and now the folks I'm working with out of Stats or elsewhere are saying, ‘We don't use R anymore. We do all this in Python.’ And I'm like, ‘Oh, come on. For the love of …’”  Additionally, even senior data scientists had similar reservations about cutting edge tools. 
+ 
+:::
+  
+## Advancing the Discipline
+
+:::: {style="display: flex;"}
+
+::: {}
+
+- Advancing the Discipline
+  
+:::
+
+::: {}
+
+![](images/noun_data science_1630979.png "Advancing the Discipline"){width="400px"}
+<center>
+
+<font size="1"> Image Credit: data science by H Alberto Gongora from the Noun Project</font>
+
+</center>
+
+:::
+
+::::
+
+:::{.notes}
+A theme that emerged from the respondents was that the use of Big Data and Data Science methods can “advance the discipline.” Data Science tools can bring a new focus to many disciplines, even creating an overall shift in disciplines and providing innovative approaches to answer old questions. For example, an urban planner had this to say: "These [small-scale, sensor-based] approaches allow us to understand social and spatial phenomenon at a much finer scale than we were able to in the past and allow us to potentially address longstanding planning objectives, planning questions, in a way that we just simply haven't been able to do in the past because of limitations to the data available and limitations to the computing, and analytic methods we had available to us, period."  So, new data changes the kinds of questions that can be answered – questions that could previously only be answered indirectly, in an aggregate way.
+
+Respondents view data science as becoming completely embedded in their disciplines, and transforming the kinds of questions that are asked and answered. 
+:::
+
+## Recommendations
+
+<font size="3">
+
+Sensitive data:
+
+- Training on handling sensitive data.
+- Research Computing expands infrastructure for sensitive data.
+
+Data acquisition: 
+
+- Library helps acquire datasets.
+
+Data and code preservation:
+
+- Library supports LibraData as much as possible to handle big data.
+- Market LibraData as a place for code.
+
+Data processing:
+
+- Review formal training on data cleaning, and potentially offer more informal training in this area.
+
+Community and collaboration:
+
+- Interdisciplinary training and community events focused on shared methods.
+- Highlight strategies of successful collaborations.
+- Invite local IRBs to discuss cross-institutional collaboration.
+
+General Knowledge:
+
+- Highlight disciplinary big data/data science journals and conferences.
+- Continue workshop series, with an expanded focus on Big Data.
+
+</font>
+
+:::{.notes}
+
+For research that involves sensitive or proprietary data, we recommend that:
+
+- The Library and Research Computing provide continued training for the handling of sensitive data, including what the different types of sensitivity are, where sensitive data can be stored, and where it can be processed.
+- Research Computing plan for additional infrastructure where sensitive data can be stored and processed, to handle the future increase in sensitive data.
+
+In addition, there are opportunities to help researchers in general.
+For data acquisition, we recommend that:
+
+- The Library helps acquire proprietary datasets or datasets from industry (like from social media companies). The Library has the infrastructure in place to license and store proprietary datasets but would require funding from other units for data acquisition (for example, funding from faculty, Provost, or Vice President for Research).
+
+For data and code preservation, we recommend that:
+
+- The Library provides better support for LibraData to accept “big data,” or market LibraData as being able to point to another site to find the files.
+- The Library markets LibraData as able to accept code. The respondents seemed familiar with LibraData as a place to preserve data, but LibraData was never mentioned as a place to store code. GitHub and Zenodo came up most frequently as sites to share and store code.
+
+For data processing, we recommend that:
+
+- The Library reviews the proportion of course time dedicated to data cleaning in the various departments and schools. This is potentially a type of training the Library and Research Computing could offer more intensively. Continue to market the statistical consultation services we already provide.
+
+For development of community and collaboration, we recommend that: 
+
+- The Library and Research Computing provide more interdisciplinary methods and data-focused workshops or community building events across Grounds. The Library would be the host organization.
+- The Library and Research Computing provide workshops and outreach materials highlighting the strategies that big data researchers and data scientists use for successful collaborations, for example documentation, file naming, organization, version control, and cloud storage and document platforms.
+- The Library invites the local IRBs to collaborate on a workshop about designing IRB protocols for collaborations across multiple institutions.
+
+For general knowledge, we recommend that:
+
+- The Library highlights journals and conferences that are disciplinary in nature but that embrace Big Data or Data Science methods.
+- The Library and Research Computing continue to provide workshops for programming languages, such as R, Python, and MATLAB, but also include workshops and consultation service that show how to efficiently handle Big Data.
+
+The end!
+Thanks to Ricky Patterson and Michele Claibourn for encouraging me in this work. 
+:::
