@@ -8,6 +8,6 @@ Jennifer Huck
 Presented on 13 Oct 2021
 
 ## Slides
-[Slides](https://jennhuck.github.io/ithaka-RLS/Ithaka-RLS-presentation.html) are available.
+[Slides](https://jennhuck.github.io/ithaka-rls/Ithaka-RLS-presentation.html) are available.
 
-[Presenter mode slides](https://jennhuck.github.io/ithaka-RLS/Ithaka-RLS-presentation.html?presentme=true) are also available.  Allow pop-ups.
+[Presenter mode slides](https://jennhuck.github.io/ithaka-rls/Ithaka-RLS-presentation.html?presentme=true) are also available.  Allow pop-ups.
